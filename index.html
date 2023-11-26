@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrian Klinik Optimation</title>
+</head>
+<body>
+    <h1>Antrian Klinik Optimation</h1>
+    <div>
+        <label for="doctorCount">Number of Doctors:</label>
+        <input type="number" id="doctorCount" min="1" value="2">
+    </div>
+    <div id="doctorInputs">
+        <!-- Doctor input fields will be generated here -->
+    </div>
+    <div>
+        <label for="patientPosition">Patient's Position in Queue:</label>
+        <input type="number" id="patientPosition" min="1" value="11">
+    </div>
+    <button onclick="calculateEstimatedWaitingTime()">Calculate Waiting Time</button>
+    <p id="result"></p>
+    <script src="app.js"></script>
+</body>
+</html>
